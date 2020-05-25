@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: echo-boot
+  name: echo-boot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echo-boot
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: echo-boot
+    spec:
+      containers:
+      - image: sa-spring/echo:1.0
+        name: echo
+        imagePullPolicy: Never
+        resources: {}
+status: {}
