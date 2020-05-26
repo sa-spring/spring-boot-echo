@@ -22,4 +22,6 @@ spec:
         name: echo
         imagePullPolicy: Never
         resources: {}
+        ports:
+            - containerPort: 8080
 status: {}
