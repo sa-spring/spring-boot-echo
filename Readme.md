@@ -22,7 +22,7 @@ minikube service echo-boot --url
 curl http://.....
 
 # 横向扩展
-kubectl scale depolyment echo-boot --replicas=2
+kubectl scale deployment echo-boot --replicas=2
 
 curl http://.....
 ```
